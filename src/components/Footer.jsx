@@ -10,7 +10,7 @@ export default function Footer() {
             href="https://github.com/shasb"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-slate-800 hover:text-slate-600 transition-colors text-lg"
+            className="text-slate-800/60 hover:text-slate-600 transition-colors text-lg"
             aria-label="GitHub"
           >
             &pi;
