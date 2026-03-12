@@ -44,20 +44,7 @@ export default function Navigation() {
         }`}
       >
         <div className="max-w-6xl mx-auto px-6">
-          <div className="flex items-center justify-between h-16 md:h-20">
-            <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-              }}
-              className={`text-lg font-semibold tracking-tight transition-colors ${
-                isScrolled ? 'text-slate-900' : 'text-white'
-              }`}
-            >
-              Bryce
-            </a>
-
+          <div className="flex items-center justify-end h-16 md:h-20">
             {/* Desktop nav */}
             <div className="hidden md:flex items-center gap-8">
               {navItems.map((item) => (
