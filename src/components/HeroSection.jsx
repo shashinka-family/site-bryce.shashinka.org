@@ -51,15 +51,6 @@ export default function HeroSection() {
           transition={{ delay: 0.8 }}
         >
           <a
-            href="https://github.com/shasb"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-3 rounded-full bg-white/5 hover:bg-white/10 text-slate-400 hover:text-white transition-all duration-300"
-            aria-label="GitHub"
-          >
-            <Github className="w-5 h-5" />
-          </a>
-          <a
             href="https://linkedin.com/in/shashinka"
             target="_blank"
             rel="noopener noreferrer"
@@ -67,6 +58,15 @@ export default function HeroSection() {
             aria-label="LinkedIn"
           >
             <Linkedin className="w-5 h-5" />
+          </a>
+          <a
+            href="https://github.com/shasb"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full bg-white/5 hover:bg-white/10 text-slate-400 hover:text-white transition-all duration-300"
+            aria-label="GitHub"
+          >
+            <Github className="w-5 h-5" />
           </a>
         </motion.div>
 
