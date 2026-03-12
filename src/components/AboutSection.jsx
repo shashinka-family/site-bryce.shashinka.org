@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { MapPin } from 'lucide-react';
 
 const stats = [
-  { label: 'Experience', value: '15+ Years' },
+  { label: 'Experience', value: '20 Years' },
   { label: 'Focus', value: 'CM & Infrastructure' },
   { label: 'Education', value: 'BS Business Management' },
   { label: 'Certification', value: 'Six Sigma Green Belt' },
@@ -29,10 +29,10 @@ export default function AboutSection() {
             </h2>
             <div className="space-y-6 text-slate-600 leading-relaxed">
               <p>
-                Fifteen years building and managing engineered systems — from aerospace supply chains at Pratt & Whitney to configuration management and master data at ASML in semiconductor manufacturing. Every role reinforced the same principle: disciplined systems thinking scales, whether the deliverable is a jet engine BoM or a cloud deployment pipeline.
+                Twenty years in technology — starting with a residential IT support business I founded in 2006, through aerospace supply chains at Pratt & Whitney, into configuration management and master data at ASML in semiconductor manufacturing. Every role reinforced the same principle: disciplined systems thinking scales, whether the deliverable is a jet engine BoM or a cloud deployment pipeline.
               </p>
               <p>
-                That foundation now drives BPS Enterprises and 1507 Systems, the managed service provider I founded in 2024. I design infrastructure, automate operations, and secure networks for small and mid-size businesses — production systems, not prototypes. An AS in Computer Engineering gave me the technical baseline; a BS in Business Management and a Six Sigma Green Belt sharpened the operational and leadership edge.
+                That thread now comes full circle with BPS Enterprises and 1507 Systems, the managed service provider I relaunched in 2024. I design infrastructure, automate operations, and secure networks for small and mid-size businesses — production systems, not prototypes. An AS in Computer Engineering gave me the technical baseline; a BS in Business Management and a Six Sigma Green Belt sharpened the operational and leadership edge.
               </p>
               <p>
                 I build things that run. Infrastructure that holds up under load, automation that eliminates repetitive work, and documentation that makes the next person's job easier. Currently looking for the right engineering team where that mindset fits — individual contributor or technical lead.
