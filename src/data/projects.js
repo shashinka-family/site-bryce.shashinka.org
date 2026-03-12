@@ -3,7 +3,7 @@ export const projects = [
     id: 1,
     title: 'SNaI',
     description:
-      'SIEM and log aggregation platform processing 1,000+ events per second with semantic search via vector embeddings.',
+      'RAG-powered technical knowledgebase with vector search, document ingestion, and MCP server integration for AI-assisted retrieval across internal documentation.',
     tags: ['Cloudflare Workers', 'D1', 'Vectorize', 'Hono', 'React'],
   },
   {
