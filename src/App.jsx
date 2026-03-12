@@ -1,7 +1,23 @@
+import Navigation from './components/Navigation'
+import HeroSection from './components/HeroSection'
+import AboutSection from './components/AboutSection'
+import ExperienceSection from './components/ExperienceSection'
+import SkillsSection from './components/SkillsSection'
+import ProjectsSection from './components/ProjectsSection'
+import ContactSection from './components/ContactSection'
+import Footer from './components/Footer'
+
 export default function App() {
   return (
-    <div className="min-h-screen bg-slate-900 flex items-center justify-center">
-      <h1 className="text-4xl text-white font-light">bryce.shashinka.org</h1>
+    <div className="min-h-screen">
+      <Navigation />
+      <HeroSection />
+      <AboutSection />
+      <ExperienceSection />
+      <SkillsSection />
+      <ProjectsSection />
+      <ContactSection />
+      <Footer />
     </div>
   )
 }
