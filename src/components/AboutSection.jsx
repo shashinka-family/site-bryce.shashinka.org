@@ -6,6 +6,7 @@ const stats = [
   { label: 'Focus', value: 'CM & Infrastructure' },
   { label: 'Education', value: 'BS Business Management' },
   { label: 'Certification', value: 'Six Sigma Green Belt' },
+  { label: 'Certification', value: 'CM2 (IpX)' },
 ];
 
 export default function AboutSection() {
@@ -32,7 +33,7 @@ export default function AboutSection() {
                 Twenty years in technology — starting with a residential IT support business I founded in 2006, through engineering change management and BoM releases at Pratt & Whitney, into configuration management and master data at ASML in semiconductor manufacturing. Every role reinforced the same principle: disciplined systems thinking scales, whether the deliverable is a jet engine BoM or a cloud deployment pipeline.
               </p>
               <p>
-                That thread now comes full circle with BPS Enterprises and 1507 Systems, the managed service provider I relaunched in 2024. I design infrastructure, automate operations, and secure networks for small and mid-size businesses — production systems, not prototypes. An AS in Computer Engineering gave me the technical baseline; a BS in Business Management and a Six Sigma Green Belt sharpened the operational and leadership edge.
+                That thread now comes full circle with BPS Enterprises and 1507 Systems, the managed service provider I relaunched in 2024. I design infrastructure, automate operations, and secure networks for small and mid-size businesses — production systems, not prototypes. An AS in Computer Engineering gave me the technical baseline; a BS in Business Management, a Six Sigma Green Belt, and IpX CM2 certification sharpened the operational and leadership edge.
               </p>
               <p>
                 I build things that run. Infrastructure that holds up under load, automation that eliminates repetitive work, and documentation that makes the next person's job easier. Currently looking for the right engineering team where that mindset fits — individual contributor or technical lead.
@@ -47,9 +48,9 @@ export default function AboutSection() {
 
           {/* Right column — stats grid */}
           <div className="grid grid-cols-2 gap-6">
-            {stats.map((stat) => (
+            {stats.map((stat, index) => (
               <div
-                key={stat.label}
+                key={`${stat.label}-${index}`}
                 className="border border-slate-200 rounded-xl p-6 hover:border-blue-500 transition-colors duration-300"
               >
                 <p className="text-blue-700 text-xs uppercase tracking-widest mb-2">{stat.label}</p>
