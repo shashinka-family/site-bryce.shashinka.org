@@ -12,7 +12,7 @@ export const projects = [
     id: 2,
     title: "Hellga's Kitchen",
     description:
-      'Custom restaurant website with online ordering, event management, customer loyalty program, and admin dashboard.',
+      'Custom e-commerce platform for an artisan preserved goods company — online ordering, event management, customer loyalty program, and admin dashboard.',
     tags: ['React', 'Cloudflare Workers', 'D1', 'Tailwind CSS'],
     status: 'Live',
     url: 'https://hellgaskitchen.com',
