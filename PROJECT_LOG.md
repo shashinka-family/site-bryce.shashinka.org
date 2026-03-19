@@ -74,3 +74,9 @@ Project declared production-ready.
 - Auto-deploys on push to main
 - All sections functional and visually verified
 - Production-ready (v1.0-audit-clean)
+
+## 2026-03-17/19: Profile & Content Updates
+
+- Added CM2 (IpX) certification to profile
+- Restructured project cards with AI infrastructure and developer tooling groups
+- Fixed Hellga's Kitchen description (preserved goods, not restaurant)
