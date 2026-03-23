@@ -12,6 +12,15 @@ Personal portfolio site for Bryce P. Shashinka, targeting day-job roles in engin
 - CF Pages project: `site-bryce-shashinka-org`
 - Domain: `bryce.shashinka.org`
 
+
+## 2026-03-23 — CI pipeline updated
+
+### What changed
+- Updated `.github/workflows/ci.yml`: pinned Node version to 20 (was 22).
+- Added `audit` job: `npm audit --audit-level=high` — runs in parallel with lint/test.
+- `build` job now gates on `[lint, test, audit]`.
+- Branch protection attempted via `gh api` (expected failure on private free-tier repos).
+
 ## Build History
 
 ### 2026-03-12 — Initial build
