@@ -1,3 +1,4 @@
+<!-- summary: Personal portfolio site for Bryce covering engineering leadership, CM, infrastructure, and systems experience. -->
 # PROJECT_LOG — bryce.shashinka.org
 
 ## Overview
