@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: 1,
-    title: 'Noti',
+    title: 'Dingus',
     description:
       'Native macOS menu bar app for ntfy push notifications. Pure Swift/SwiftUI with zero dependencies — lightweight, fast, and fully native.',
     tags: ['Swift', 'SwiftUI', 'macOS', 'ntfy'],
