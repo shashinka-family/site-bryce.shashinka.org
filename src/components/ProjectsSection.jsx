@@ -31,7 +31,13 @@ export default function ProjectsSection() {
               className="bg-slate-700/60 rounded-2xl p-8 border border-slate-600 hover:border-slate-400 transition-all duration-500"
             >
               <h3 className="text-xl font-semibold text-white mb-3">
-                {project.title}
+                {project.url ? (
+                  <a href={project.url} target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 transition-colors">
+                    {project.title}
+                  </a>
+                ) : (
+                  project.title
+                )}
               </h3>
               <p className="text-slate-400 text-sm mb-6 leading-relaxed">
                 {project.description}
