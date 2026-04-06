@@ -60,7 +60,7 @@ export default function HeroSection() {
             <Linkedin className="w-5 h-5" />
           </a>
           <a
-            href="https://github.com/shasb"
+            href="https://github.com/bryce-shashinka"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-full bg-white/5 hover:bg-white/10 text-slate-400 hover:text-white transition-all duration-300"

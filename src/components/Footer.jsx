@@ -7,7 +7,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Bryce P. Shashinka. All rights reserved.
           </p>
           <a
-            href="https://github.com/shasb"
+            href="https://github.com/bryce-shashinka"
             target="_blank"
             rel="noopener noreferrer"
             className="text-slate-800/60 hover:text-slate-600 transition-colors text-lg"
