@@ -53,6 +53,6 @@ export const experiences = [
     endYear: '2015',
     isCurrent: false,
     description:
-      'Pratt & Whitney Engineering: BoM management for NGPF development engines, Teamcenter/Unigraphics NX, $2M+ SOW project management. Backup Team Lead for a team of 10.',
+      'Pratt & Whitney Engineering: BoM management for NGPF development engines, Teamcenter/Unigraphics NX, $2M+ SOW project management. Backup Team Lead for a team of 15.',
   },
 ];
