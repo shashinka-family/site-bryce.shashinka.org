@@ -36,7 +36,7 @@ Configuration Management & Implementation Professional. 8+ years delivering CM s
 - Engineering change notices, proposals, change orders
 - PW1100G-JM development program (Pratt & Whitney via Belcan)
 - Project management for SOWs >$5M
-- Lead role, training, performance evaluation input
+- Technical team lead, training, performance evaluation input
 - Production control board member
 
 ### QuEST Global Services — Senior Engineer
@@ -45,7 +45,7 @@ Configuration Management & Implementation Professional. 8+ years delivering CM s
 - NGPF development engines, Teamcenter/Unigraphics NX
 - Engineering changes for Externals Product Definition
 - Project management for SOWs >$2M
-- Backup Team Lead (team of 10)
+- Backup Team Lead (team of 15)
 
 ### Cablevision Systems Corporation — Tech Support Representative II
 2009–2011 | Shelton, CT
