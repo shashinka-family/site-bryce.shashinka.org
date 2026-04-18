@@ -14,6 +14,21 @@ Personal portfolio site for Bryce P. Shashinka, targeting day-job roles in engin
 - Domain: `bryce.shashinka.org`
 
 
+## 2026-04-17 — SEO: Schema.org Person + full meta stack
+
+### Why
+Stale LinkedIn vanity URL (`/in/bryceshashinka`) still indexed in Google for the name query "Bryce Shashinka" despite being retired years ago. Out-ranking beats whack-a-mole: boost bryce.shashinka.org's authority for the name so the site becomes the canonical SERP result.
+
+### What changed
+- Added Schema.org `Person` JSON-LD with canonical `@id`, `sameAs` (LinkedIn `/in/shashinka`, GitHub `/bryce-shashinka`), `worksFor` (BPS Enterprises + 1507 Systems), `alumniOf` (WGU), `hasCredential` (CM2, Six Sigma, BS), `knowsAbout`, and CT address.
+- Added canonical URL, keywords, robots directive, author meta tags.
+- Added Twitter card + expanded Open Graph (og:type=profile, first_name/last_name).
+- Expanded `<title>` and description to surface "Bryce Shashinka" + credentials in the rendered snippet.
+
+### Follow-up
+- Mirror pattern on 1507.systems and bps.enterprises with `Organization` schema where `founder` points back to `https://bryce.shashinka.org/#person` — creates bidirectional entity graph for Knowledge Graph consolidation.
+- After deploy: submit `bryce.shashinka.org` to Google Search Console + Refresh request for stale LinkedIn URL.
+
 ## 2026-03-23 — CI pipeline updated
 
 ### What changed
