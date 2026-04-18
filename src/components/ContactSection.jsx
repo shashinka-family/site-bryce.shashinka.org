@@ -2,14 +2,11 @@ import { useState, useRef, useEffect, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 
-/**
- * Turnstile site key — swap for production key after creating widget in CF dashboard.
- * Test key always passes: https://developers.cloudflare.com/turnstile/troubleshooting/testing/
- */
-// TODO: Replace with real Turnstile site key from CF dashboard
-// Test key (always passes): '1x00000000000000000000AA'
-// Create widget at: https://dash.cloudflare.com/?to=/:account/turnstile
-const TURNSTILE_SITE_KEY = '1x00000000000000000000AA';
+// Production Turnstile site key — widget "bryce.shashinka.org Contact Form"
+// in the 1507 Systems CF account, managed mode, domain-scoped to
+// bryce.shashinka.org. Rotate by minting a new widget via
+// `wicket get cloudflare/turnstile` and updating this string.
+const TURNSTILE_SITE_KEY = '0x4AAAAAABnJv4z3QpLQTdnE';
 
 const contactLinks = [
   {
