@@ -1,96 +1,76 @@
+// Curated, rotating showcase. Highest-impact public/ready work goes here;
+// the full catalog lives at https://1507.systems/apps. Rotate cards as
+// projects mature, launch, or get archived — don't be shy.
 export const projects = [
   {
-    id: 1,
-    title: 'HostHum',
+    id: 'narmfinder',
+    title: 'NARM Finder',
     description:
-      'Homelab host monitoring — lightweight agent + dashboard that surfaces uptime, resource pressure, and service health across self-hosted fleets. Built for operators who want a clean signal without running a full observability stack.',
-    tags: ['React', 'Vite', 'Swift', 'Python', 'Cloudflare Pages'],
-    status: 'Pre-launch',
-    url: 'https://hosthum.app',
-    publisher: '1507 Systems',
-  },
-  {
-    id: 2,
-    title: 'Dingus',
-    description:
-      'Self-hosted push notification client — native macOS menu bar app for ntfy with an Apple Push Notifications bridge. Pure Swift/SwiftUI, zero dependencies, and first-class support for the self-hosted ntfy stack.',
-    tags: ['Swift', 'SwiftUI', 'macOS', 'APNs', 'ntfy'],
-    status: 'Pre-launch',
-    url: 'https://dingus.app',
-    publisher: '1507 Systems',
-  },
-  {
-    id: 3,
-    title: 'Applimint',
-    description:
-      'Job application tracker for people running a serious search — pipeline views, contact history, follow-up nudges, and a timeline that actually reflects how hiring works in 2026.',
-    tags: ['React', 'Cloudflare Workers', 'D1'],
-    status: 'Pre-launch',
-    url: 'https://applimint.app',
-    publisher: '1507 Systems',
-  },
-  {
-    id: 4,
-    title: 'MuseumPass',
-    description:
-      'Multi-program reciprocal museum finder — searches across reciprocal membership networks (NARM, ROAM, ASTC, and more) to show every museum your membership gets you into, wherever you travel.',
-    tags: ['React', 'Cloudflare Workers', 'D1'],
-    status: 'Pre-launch',
-    url: 'https://museumpass.app',
-    publisher: '1507 Systems',
-  },
-  {
-    id: 5,
-    title: 'NARMFinder',
-    description:
-      'NARM-only reciprocal museum finder — fast, focused lookup of North American Reciprocal Museum network participants. Live beta, built as a minimal companion to MuseumPass.',
-    tags: ['React', 'Cloudflare Workers', 'NARM'],
+      'Free community tool for searching the North American Reciprocal Museum network. Sort 1,500+ museums by distance, filter by restriction codes, pick a home institution and see which restrictions actually apply to you.',
+    tags: ['Cloudflare Workers', 'D1', 'Hono', 'Vanilla JS'],
     status: 'Live (beta)',
     url: 'https://narmfinder.app',
-    publisher: '1507 Systems',
   },
   {
-    id: 6,
+    id: 'marathon-mode',
+    title: 'Marathon Mode',
+    description:
+      'Quota-aware autonomous session manager for Claude Code. Monitors subscription usage in real time, right-sizes model selection per task, manages parallel dispatch, and ensures clean breakpoints before quota limits — so overnight batch work actually finishes.',
+    tags: ['Claude Code Plugin', 'Shell', 'jq', 'MIT License'],
+    status: 'Open source',
+    url: 'https://github.com/1507-systems/marathon-mode',
+  },
+  {
+    id: 'murmurate',
+    title: 'Murmurate',
+    description:
+      'Privacy tool that generates realistic decoy internet traffic to obscure real browsing activity. Runs in the background producing convincing web requests across diverse sites and topics — making it harder for observers to identify what you are actually doing online.',
+    tags: ['TypeScript', 'Node.js', 'Privacy', 'Open Source'],
+    status: 'Open source',
+    url: 'https://github.com/1507-systems/murmurate',
+  },
+  {
+    id: 'reconvoy',
+    title: 'Reconvoy',
+    description:
+      'Nightly autonomous maintenance daemon for project repositories — scans for stale work, surfaces what was touched recently, respects WIP guards, and produces a clean morning report. Built to keep dozens of projects healthy without daily attention.',
+    tags: ['Shell', 'jq', 'Cron', 'Open Source (planned)'],
+    status: 'Private beta',
+  },
+  {
+    id: 'hosthum',
+    title: 'HostHum',
+    description:
+      'Quiet always-on uptime and health monitor for the homelab and beyond. Small Python daemon per host, native macOS menu bar client, no cloud required.',
+    tags: ['Python', 'Swift', 'SwiftUI', 'macOS'],
+    status: 'Pre-launch',
+    url: 'https://hosthum.app',
+  },
+  {
+    id: 'dingus',
+    title: 'Dingus',
+    description:
+      'Push notifications for the stuff you built yourself. A small macOS and iOS client for ntfy — the self-hosted push service. Bring your own ntfy server, subscribe from your pocket, stop paying a SaaS to forward a webhook.',
+    tags: ['Swift', 'SwiftUI', 'UserNotifications', 'StoreKit 2'],
+    status: 'Pre-launch',
+    url: 'https://dingus.app',
+  },
+  {
+    id: 'hellgas-kitchen',
     title: "Hellga's Kitchen",
     description:
-      'Custom e-commerce platform for an artisan preserved goods company — online ordering, event management, customer loyalty program, and admin dashboard.',
+      'Custom e-commerce, order management, and customer loyalty platform for an artisan preserved goods business in the Pocono Mountains. Online ordering, event management, customer profiles with loyalty tracking, and a full admin dashboard.',
     tags: ['React', 'Cloudflare Workers', 'D1', 'Tailwind CSS'],
     status: 'Live',
     url: 'https://hellgaskitchen.com',
   },
   {
-    id: 7,
-    title: 'AI Agent Infrastructure',
+    id: 'applimint',
+    title: 'Applimint',
     description:
-      'Suite of tools powering autonomous AI agent workflows — an orchestration daemon with plugin architecture and control UI, cross-platform memory persistence, RAG-powered knowledgebases with vector search, semantic corpus building, and MCP tool servers for extending agent capabilities.',
-    tags: ['Python', 'Cloudflare Workers', 'MCP', 'React', 'D1', 'ChromaDB'],
-  },
-  {
-    id: 8,
-    title: 'VoIP Phone System',
-    description:
-      'Multi-line business phone system with automated IVR, call routing, voicemail, and fax gateway.',
-    tags: ['Asterisk', 'SIP', 'VoIP.ms', 'Cloudflare Workers'],
-  },
-  {
-    id: 9,
-    title: 'Infrastructure Automation',
-    description:
-      'Comprehensive automation platform integrating 50+ devices across Zigbee, Z-Wave, and HomeKit with centralized control.',
-    tags: ['Home Assistant', 'Hubitat', 'Node.js', 'MQTT'],
-  },
-  {
-    id: 10,
-    title: 'Developer Tooling',
-    description:
-      'Internal tools that multiply productivity — KVM-over-IP fleet management dashboard, headless browser rendering service, domain availability checking, and CI/CD pipeline automation across projects.',
-    tags: ['Cloudflare Workers', 'Docker', 'React', 'Playwright', 'GitHub Actions'],
-  },
-  {
-    id: 11,
-    title: '1507.systems & Portfolio Sites',
-    description:
-      'Suite of static marketing sites migrated from third-party hosting to self-managed Cloudflare Pages with CI/CD auto-deploy.',
-    tags: ['React', 'Vite', 'Tailwind', 'GitHub Actions', 'Cloudflare Pages'],
+      'A calm system for a messy search. Personal operations tool for your job search — track every application end to end: company, role, date applied, last contact, next action. No gamification, no LinkedIn login, no nagging notifications.',
+    tags: ['React', 'Cloudflare Workers', 'D1', 'Tailwind CSS'],
+    status: 'Pre-launch',
+    url: 'https://applimint.app',
   },
 ];
