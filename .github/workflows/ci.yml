@@ -98,6 +98,12 @@ jobs:
     permissions:
       pull-requests: write
     steps:
+      # Checkout repo so the functions/ directory is present alongside the
+      # downloaded dist artifact. wrangler pages deploy auto-includes
+      # sibling functions/ from cwd; without a checkout the deploy is
+      # functions-less and the /api/contact route 405s.
+      - uses: actions/checkout@v4
+
       - name: Download build artifacts
         uses: actions/download-artifact@v4
         with:
@@ -106,6 +112,9 @@ jobs:
 
       - name: Deploy to CF Pages
         uses: cloudflare/wrangler-action@v3
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -129,6 +138,9 @@ jobs:
     needs: [build]
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     steps:
+      # Checkout repo so wrangler picks up functions/ at deploy time.
+      - uses: actions/checkout@v4
+
       - name: Download build artifacts
         uses: actions/download-artifact@v4
         with:
@@ -137,6 +149,9 @@ jobs:
 
       - name: Deploy to CF Pages
         uses: cloudflare/wrangler-action@v3
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
