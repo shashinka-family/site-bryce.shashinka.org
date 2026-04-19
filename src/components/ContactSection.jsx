@@ -44,6 +44,10 @@ export default function ContactSection() {
           callback: (token) => setTurnstileToken(token),
           'expired-callback': () => setTurnstileToken(''),
           theme: 'light',
+          // Invisible/interaction-only: widget only surfaces a challenge if
+          // CF flags the visitor as suspicious. Normal humans see nothing;
+          // a valid token arrives via callback shortly after mount.
+          appearance: 'interaction-only',
         });
       }
       return;
@@ -60,6 +64,10 @@ export default function ContactSection() {
           callback: (token) => setTurnstileToken(token),
           'expired-callback': () => setTurnstileToken(''),
           theme: 'light',
+          // Invisible/interaction-only: widget only surfaces a challenge if
+          // CF flags the visitor as suspicious. Normal humans see nothing;
+          // a valid token arrives via callback shortly after mount.
+          appearance: 'interaction-only',
         });
       }
     };
