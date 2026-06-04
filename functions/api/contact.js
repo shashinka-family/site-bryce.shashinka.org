@@ -2,15 +2,39 @@
  * POST /api/contact — handles contact form submissions.
  *
  * Flow:
- * 1. Parse form data (name, email, message, turnstile token)
- * 2. Verify Turnstile token with CF siteverify API
- * 3. Forward to email-sender worker to deliver notification email
+ * 1. Enforce the canonical-host allowlist (reject preview/pages.dev hostnames)
+ * 2. Parse form data (name, email, message, turnstile token)
+ * 3. Verify Turnstile token with CF siteverify API
+ * 4. Forward to email-sender worker to deliver notification email
  *
  * Environment variables (set in CF Pages settings):
  * - TURNSTILE_SECRET: Turnstile secret key for server-side verification
  * - EMAIL_SENDER_URL: URL of the email-sender worker (e.g., https://email-sender.1507.workers.dev/send)
  * - EMAIL_SENDER_TOKEN: Bearer token for the email-sender worker
  */
+
+// Hostnames allowed to invoke this endpoint. CORS headers are browser-only and
+// do nothing against non-browser clients (curl, scripts), so we additionally
+// gate on the request Host server-side. This blocks the public *.pages.dev
+// preview hostnames from being abused as an open email-relay surface.
+const ALLOWED_HOSTS = new Set(["bryce.shashinka.org"]);
+
+/**
+ * @returns {boolean} true when the request targets an allowed canonical host.
+ */
+export function isAllowedHost(request) {
+  // CF sets the URL/Host from the connecting request; Host header is the
+  // hostname the client asked for. Both must match the allowlist.
+  let host = "";
+  try {
+    host = new URL(request.url).host;
+  } catch {
+    host = request.headers.get("Host") || "";
+  }
+  // Strip any port for a clean comparison.
+  host = host.split(":")[0].toLowerCase();
+  return ALLOWED_HOSTS.has(host);
+}
 
 // Only allow POST requests
 export async function onRequestPost(context) {
@@ -22,6 +46,14 @@ export async function onRequestPost(context) {
     "Access-Control-Allow-Methods": "POST, OPTIONS",
     "Access-Control-Allow-Headers": "Content-Type",
   };
+
+  // Server-side host allowlist (defense-in-depth beyond CORS + Turnstile).
+  if (!isAllowedHost(request)) {
+    return Response.json(
+      { error: "Forbidden" },
+      { status: 403, headers: corsHeaders }
+    );
+  }
 
   try {
     const body = await request.json();
