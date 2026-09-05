@@ -24,10 +24,12 @@ Auto-deploys to Cloudflare Pages on push to `main` via GitHub Actions.
 
 - **CF Pages project:** `site-bryce-shashinka-org`
 - **Domain:** [bryce.shashinka.org](https://bryce.shashinka.org)
-- **Secrets required:** `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID` (set in GitHub repo settings)
+- **Secrets required:** `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID` (set in GitHub repo settings). Values are held outside this repository.
 
 ## Project Docs
 
-- `docs/superpowers/specs/2026-03-12-portfolio-redesign.md` — full design spec
-- `resume-reference.md` — resume content reference (not published)
 - `PROJECT_LOG.md` — build history and decisions
+
+The design spec, the deploy runbook and the resume source were removed from this
+repository: they carried account identifiers and personal history that a public
+repo should not publish. They live outside it now.
