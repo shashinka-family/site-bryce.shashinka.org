@@ -45,7 +45,7 @@ Stale LinkedIn vanity URL (`/in/bryceshashinka`) still indexed in Google for the
 - Created GitHub repo under `shashinka-family` org (public — org Actions restrictions require it)
 - Set up CF Pages auto-deploy via GitHub Actions (`npx wrangler` with env vars)
 - Built all 8 sections: Navigation, Hero, About, Experience, Skills, Projects, Contact, Footer
-- Content sourced from `resume-reference.md` and brainstorming session
+- Content sourced from the resume source document (kept outside this repository) and a brainstorming session
 - DNS CNAME pointed `bryce.shashinka.org` → `site-bryce-shashinka-org.pages.dev`
 
 ### Post-launch fixes (2026-03-12)
