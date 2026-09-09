@@ -13,6 +13,17 @@ export const experiences = [
   },
   {
     id: 2,
+    position: 'Sr. Engineering Documents Manager',
+    company: 'nLIGHT DEFENSE Systems, Inc.',
+    location: 'Longmont, CO',
+    startYear: '2026',
+    endYear: 'Present',
+    isCurrent: true,
+    description:
+      'Leading the development of configuration management and engineering document-control capabilities, with scalable approaches to configuration identification, baselines, engineering change, release control, lifecycle records, and long-term PLM maturation.',
+  },
+  {
+    id: 3,
     position: 'Change Management Specialist',
     company: 'ASML',
     location: 'Wilton, CT',
@@ -23,7 +34,7 @@ export const experiences = [
       'Configuration Management and Master Data Management for semiconductor manufacturing. Engineering Change screening, SAP BoM and material master data management, cross-sectoral CCB collaboration with Development Engineering.',
   },
   {
-    id: 3,
+    id: 4,
     position: 'Quality Assurance & IT Specialist',
     company: 'EDCO Engineering',
     location: 'Newington, CT',
@@ -34,7 +45,7 @@ export const experiences = [
       'Document quality control and process improvement. Project manager and technical specialist for NIST SP 800-171 and CMMC Level 3 compliance. ERP master data and IT infrastructure.',
   },
   {
-    id: 4,
+    id: 5,
     position: 'Configuration Analyst II',
     company: 'Belcan Engineering Group',
     location: 'Windsor, CT',
@@ -45,7 +56,7 @@ export const experiences = [
       'Engineering change management and design package review for the PW1100G-JM development program (Pratt & Whitney). Project management for $5M+ SOWs. Team lead with training and evaluation responsibilities.',
   },
   {
-    id: 5,
+    id: 6,
     position: 'Senior Engineer',
     company: 'QuEST Global Services',
     location: 'East Hartford, CT',

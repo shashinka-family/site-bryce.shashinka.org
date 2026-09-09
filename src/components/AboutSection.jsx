@@ -9,7 +9,7 @@ const stats = [
   { label: 'Certification', value: 'CM2 (IpX)' },
 ];
 
-export default function AboutSection() {
+export default function AboutSection({ profile }) {
   return (
     <section id="about" className="py-32 bg-slate-50">
       <div className="max-w-6xl mx-auto px-6">
@@ -36,13 +36,13 @@ export default function AboutSection() {
                 That thread now comes full circle with BPS Enterprises and 1507 Systems, the managed service provider I relaunched in 2024. I design infrastructure, automate operations, and secure networks for small and mid-size businesses — production systems, not prototypes. An AS in Computer Engineering gave me the technical baseline; a BS in Business Management, a Six Sigma Green Belt, and IpX CM2 certification sharpened the operational and leadership edge.
               </p>
               <p>
-                I build things that run. Infrastructure that holds up under load, automation that eliminates repetitive work, and documentation that makes the next person's job easier. Currently looking for the right engineering team where that mindset fits — individual contributor or technical lead.
+                {profile.aboutClosing}
               </p>
             </div>
 
             <div className="mt-8 flex items-center gap-2 text-slate-500">
               <MapPin className="w-4 h-4" />
-              <span className="text-sm">Connecticut</span>
+              <span className="text-sm">Longmont, Colorado</span>
             </div>
           </div>
 

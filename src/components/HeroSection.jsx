@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowDown, Github, Linkedin } from 'lucide-react';
 
-export default function HeroSection() {
+export default function HeroSection({ profile }) {
   const scrollToAbout = () => {
     document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -22,7 +22,7 @@ export default function HeroSection() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-          Engineering Leader — Configuration Management, Infrastructure, &amp; Systems
+          {profile.headline}
         </motion.p>
 
         <motion.h1
@@ -40,7 +40,7 @@ export default function HeroSection() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6 }}
         >
-          Building infrastructure, automating systems, and leading technical projects — currently founding an MSP while looking for the right engineering team to join.
+          {profile.intro}
         </motion.p>
 
         {/* Social links */}

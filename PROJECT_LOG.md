@@ -13,6 +13,14 @@ Personal portfolio site for Bryce P. Shashinka, targeting day-job roles in engin
 - CF Pages project: `site-bryce-shashinka-org`
 - Domain: `bryce.shashinka.org`
 
+## 2026-09-09 — Current role and build-time job-search mode
+
+- Added the 2026–Present Sr. Engineering Documents Manager role at nLIGHT DEFENSE Systems and updated public location/current-employer metadata.
+- Centralized steady-state and job-search copy behind `VITE_JOB_SEARCH_MODE`; it defaults off and has no visitor-facing control.
+- Kept the resume timeline shared across modes while switching hero, CTA, and OpenGraph/Twitter copy together.
+- Replaced the signature favicon with a blue/slate BPS monogram and added automated coverage for both modes.
+- Cleared 9 existing development-tool advisories through non-breaking lockfile updates. One low-severity esbuild advisory remains: it affects the Windows development server, not the production bundle or this macOS build environment. Node also emits a dependency-level `module.register()` deprecation warning.
+
 
 ## 2026-04-17 — SEO: Schema.org Person + full meta stack
 
