@@ -18,6 +18,8 @@ npm run build    # production build → dist/
 npm run preview  # preview production build
 ```
 
+Steady-state copy is the default. Set `VITE_JOB_SEARCH_MODE=true` when building the opportunity-seeking variant.
+
 ## Deployment
 
 Auto-deploys to Cloudflare Pages on push to `main` via GitHub Actions.

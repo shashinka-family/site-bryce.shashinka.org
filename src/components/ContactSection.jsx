@@ -25,7 +25,7 @@ const contactLinks = [
   },
 ];
 
-export default function ContactSection() {
+export default function ContactSection({ profile }) {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState('idle'); // idle | submitting | success | error
   const [errorMsg, setErrorMsg] = useState('');
@@ -144,7 +144,7 @@ export default function ContactSection() {
             Let's connect
           </h2>
           <p className="text-slate-500 max-w-xl mx-auto">
-            Interested in discussing opportunities, technical projects, or collaboration? Send a message or reach out through LinkedIn or GitHub.
+            {profile.contactIntro}
           </p>
         </motion.div>
 

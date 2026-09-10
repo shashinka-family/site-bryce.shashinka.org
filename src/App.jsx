@@ -6,17 +6,18 @@ import SkillsSection from './components/SkillsSection'
 import ProjectsSection from './components/ProjectsSection'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
+import { profileContent } from './config/profile.js'
 
 export default function App() {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <HeroSection />
-      <AboutSection />
+      <HeroSection profile={profileContent} />
+      <AboutSection profile={profileContent} />
       <ExperienceSection />
       <SkillsSection />
       <ProjectsSection />
-      <ContactSection />
+      <ContactSection profile={profileContent} />
       <Footer />
     </div>
   )
