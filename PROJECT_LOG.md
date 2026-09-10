@@ -13,6 +13,22 @@ Personal portfolio site for Bryce P. Shashinka, targeting day-job roles in engin
 - CF Pages project: `site-bryce-shashinka-org`
 - Domain: `bryce.shashinka.org`
 
+## 2026-09-10 — Hero and profile copy refinement
+
+- Replaced the repetitive career-summary hero with a concise infrastructure/automation lead-in and one mode-dependent current-status clause.
+- Steady-state mode names the current defense engineering work and 1507 Systems; job-search mode restores the “right engineering team” wording.
+- Refined job-search mode to make Bryce's continuing work through 1507 Systems explicit while he looks for the right engineering team.
+- Presented the founder experience solely as 1507 Systems in Longmont and removed the BPS legal entity name from public profile copy and metadata.
+- Worked the current nLIGHT role into About while retaining ASML in the historical career path and timeline.
+- Added `SPEC.md` during the documentation audit so the build-time mode and public-content contract are explicit.
+
+### Audit summary
+
+- Functionality: ESLint clean; 18 tests passing; default and job-search builds successful; both metadata modes resolve without placeholders.
+- Cleanup: no TODO/FIXME/debug-code findings in production JavaScript; working diff passes whitespace validation.
+- Security: no critical, high, or moderate dependency vulnerabilities and no hardcoded-secret findings. One accepted low-severity esbuild advisory affects only the Windows development server, not the production bundle or this macOS build environment.
+- Known dependency warning: Node reports the existing dependency-level `module.register()` deprecation during tests/builds.
+
 ## 2026-09-09 — Current role and build-time job-search mode
 
 - Added the 2026–Present Sr. Engineering Documents Manager role at nLIGHT DEFENSE Systems and updated public location/current-employer metadata.
