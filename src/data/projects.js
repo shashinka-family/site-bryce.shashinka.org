@@ -33,6 +33,15 @@ export const projects = [
     url: 'https://hellgaskitchen.com',
   },
   {
+    id: 'hourchit',
+    title: 'HourChit',
+    description:
+      'Time, mileage, and invoicing for a business of one. Punch in and out, bill the miles you actually drove, and send a real invoice — with quoting on the way.',
+    tags: ['Cloudflare Workers', 'D1', 'TypeScript', 'MIT License'],
+    status: 'Live',
+    url: 'https://hourchit.app',
+  },
+  {
     id: 'hosthum',
     title: 'HostHum',
     description:
@@ -40,15 +49,6 @@ export const projects = [
     tags: ['Python', 'Swift', 'SwiftUI', 'macOS'],
     status: 'Pre-launch',
     url: 'https://hosthum.app',
-  },
-  {
-    id: 'marathon-mode',
-    title: 'Marathon Mode',
-    description:
-      'Quota-aware autonomous session manager for Claude Code. Monitors subscription usage in real time, right-sizes model selection per task, manages parallel dispatch, and ensures clean breakpoints before quota limits — so overnight batch work actually finishes.',
-    tags: ['Claude Code Plugin', 'Shell', 'jq', 'MIT License'],
-    status: 'Open source',
-    url: 'https://github.com/1507-systems/marathon-mode',
   },
   {
     id: 'murmurate',
@@ -67,13 +67,5 @@ export const projects = [
     tags: ['Cloudflare Workers', 'D1', 'Hono', 'Vanilla JS'],
     status: 'Live (beta)',
     url: 'https://narmfinder.app',
-  },
-  {
-    id: 'reconvoy',
-    title: 'Reconvoy',
-    description:
-      'Nightly autonomous maintenance daemon for project repositories — scans for stale work, surfaces what was touched recently, respects WIP guards, and produces a clean morning report. Built to keep dozens of projects healthy without daily attention.',
-    tags: ['Shell', 'jq', 'Cron', 'Open Source (planned)'],
-    status: 'Private beta',
   },
 ];
