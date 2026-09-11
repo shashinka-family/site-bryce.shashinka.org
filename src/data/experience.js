@@ -2,8 +2,8 @@ export const experiences = [
   {
     id: 1,
     position: 'Founder & Principal Engineer',
-    company: 'BPS Enterprises LLC / 1507 Systems',
-    location: 'Connecticut',
+    company: '1507 Systems',
+    location: 'Longmont, CO',
     startYear: '2024',
     endYear: 'Present',
     isCurrent: true,

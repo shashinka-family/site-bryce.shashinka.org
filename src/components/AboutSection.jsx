@@ -30,10 +30,10 @@ export default function AboutSection({ profile }) {
             </h2>
             <div className="space-y-6 text-slate-600 leading-relaxed">
               <p>
-                Twenty years in technology — starting with a residential IT support business I founded in 2006, through engineering change management and BoM releases at Pratt & Whitney, into configuration management and master data at ASML in semiconductor manufacturing. Every role reinforced the same principle: disciplined systems thinking scales, whether the deliverable is a jet engine BoM or a cloud deployment pipeline.
+                Twenty years in technology — starting with a residential IT support business I founded in 2006, through engineering change management and BoM releases at Pratt & Whitney, into configuration management and master data at ASML, and now leading engineering document-control capability development at nLIGHT. Every role reinforced the same principle: disciplined systems thinking scales, whether the deliverable is a jet engine BoM or a cloud deployment pipeline.
               </p>
               <p>
-                That thread now comes full circle with BPS Enterprises and 1507 Systems, the managed service provider I relaunched in 2024. I design infrastructure, automate operations, and secure networks for small and mid-size businesses — production systems, not prototypes. An AS in Computer Engineering gave me the technical baseline; a BS in Business Management, a Six Sigma Green Belt, and IpX CM2 certification sharpened the operational and leadership edge.
+                That thread now comes full circle with 1507 Systems, the managed service provider I relaunched in 2024. I design infrastructure, automate operations, and secure networks for small and mid-size businesses — production systems, not prototypes. An AS in Computer Engineering gave me the technical baseline; a BS in Business Management, a Six Sigma Green Belt, and IpX CM2 certification sharpened the operational and leadership edge.
               </p>
               <p>
                 {profile.aboutClosing}

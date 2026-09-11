@@ -23,7 +23,12 @@ describe('profile content modes', () => {
       'Engineering Leader — Configuration Management & Systems',
     )
     expect(profile.intro).toContain(
-      'I currently lead the development of configuration management and engineering document-control capabilities',
+      'currently leading the development of configuration management and engineering document-control capabilities',
+    )
+    expect(profile.intro).toMatch(/^Building infrastructure, automating systems, and leading technical projects —/)
+    expect(profile.intro).not.toContain('BPS Enterprises')
+    expect(profile.intro).toContain(
+      'while continuing to build systems through 1507 Systems.',
     )
     expect(profile.contactIntro).not.toContain('opportunities')
     expect(profile.socialDescription).not.toContain('Open to')
@@ -35,12 +40,16 @@ describe('profile content modes', () => {
     expect(profile.headline).toBe(
       'Engineering Leader — Configuration Management & Systems',
     )
-    expect(profile.intro).toContain(
-      'I’m open to the right engineering or technical leadership role',
+    expect(profile.intro).toBe(
+      'Building infrastructure, automating systems, and leading technical projects through 1507 Systems — while looking for the right engineering team to join.',
     )
     expect(profile.contactIntro).toContain('opportunities')
     expect(profile.socialDescription).toContain(
       'Open to the right engineering/analyst role.',
     )
+    expect(profile.socialDescription).toContain('nLIGHT')
+    expect(profile.socialDescription).not.toContain('ASML')
+    expect(profile.socialTitle).toContain('1507 Systems')
+    expect(profile.socialTitle).not.toContain('BPS Enterprises')
   })
 })
