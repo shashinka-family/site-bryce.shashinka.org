@@ -139,10 +139,11 @@ Project declared production-ready.
 ### Audit run
 
 - Documentation: README and SPEC remain accurate; this log records the curation change.
-- Functionality: 19 tests pass across 7 files; lint passes; steady-state and job-search builds pass.
+- Functionality: 20 tests pass across 7 files; lint passes; steady-state and job-search builds pass.
 - Browser smoke test: the production build renders HourChit with the approved copy and link; Marathon Mode and Reconvoy do not render.
 - Cleanup: no unresolved TODO/FIXME markers, debug logging, or dead project-card entries found.
 - Security: no embedded credentials or dangerous HTML/eval usage found; the contact endpoint retains its origin restriction and existing validation tests.
 - Dependencies: zero critical, high, or moderate vulnerabilities. Six low-severity development-server findings in esbuild remain accepted because upstream provides no fix and the affected Windows development-server scenario is not used in production.
 - Dependency updates: newer packages are available but are outside this content-only change and are not required for correctness or security.
 - Expected local-only warning: Cloudflare Turnstile rejects `127.0.0.1` with error 110200 because the production widget is domain-restricted; deployed contact-form behavior is covered by the existing endpoint and rendering tests.
+- Review finding resolved: moved HourChit after HostHum to preserve alphabetical title order and added a regression test for the ordering contract.

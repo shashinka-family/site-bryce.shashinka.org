@@ -10,4 +10,13 @@ describe('featured projects', () => {
     expect(projectIds).not.toContain('marathon-mode');
     expect(projectIds).not.toContain('reconvoy');
   });
+
+  it('keeps featured projects alphabetized by title', () => {
+    const projectTitles = projects.map(({ title }) => title);
+    const alphabetizedTitles = [...projectTitles].sort((left, right) =>
+      left.localeCompare(right),
+    );
+
+    expect(projectTitles).toEqual(alphabetizedTitles);
+  });
 });

@@ -33,15 +33,6 @@ export const projects = [
     url: 'https://hellgaskitchen.com',
   },
   {
-    id: 'hourchit',
-    title: 'HourChit',
-    description:
-      'Time, mileage, and invoicing for a business of one. Punch in and out, bill the miles you actually drove, and send a real invoice — with quoting on the way.',
-    tags: ['Cloudflare Workers', 'D1', 'TypeScript', 'MIT License'],
-    status: 'Live',
-    url: 'https://hourchit.app',
-  },
-  {
     id: 'hosthum',
     title: 'HostHum',
     description:
@@ -49,6 +40,15 @@ export const projects = [
     tags: ['Python', 'Swift', 'SwiftUI', 'macOS'],
     status: 'Pre-launch',
     url: 'https://hosthum.app',
+  },
+  {
+    id: 'hourchit',
+    title: 'HourChit',
+    description:
+      'Time, mileage, and invoicing for a business of one. Punch in and out, bill the miles you actually drove, and send a real invoice — with quoting on the way.',
+    tags: ['Cloudflare Workers', 'D1', 'TypeScript', 'MIT License'],
+    status: 'Live',
+    url: 'https://hourchit.app',
   },
   {
     id: 'murmurate',
