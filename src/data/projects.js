@@ -63,7 +63,7 @@ export const projects = [
     id: 'narmfinder',
     title: 'NARM Finder',
     description:
-      'Free community tool for searching the North American Reciprocal Museum network. Sort 1,500+ museums by distance, filter by restriction codes, pick a home institution and see which restrictions actually apply to you.',
+      'Free community tool for searching the North American Reciprocal Museum network. Sort 1,500+ museums by distance, filter by restriction codes, pick a home institution and see which restrictions actually apply to you. Check off the museums you have visited; that list is saved locally in your browser.',
     tags: ['Cloudflare Workers', 'D1', 'Hono', 'Vanilla JS'],
     status: 'Live (beta)',
     url: 'https://narmfinder.app',
